@@ -556,7 +556,7 @@ form {
 }
 
 .search-group span{
-  display: none;
+  visibility: hidden;
 }
 
 .search-button {
@@ -575,7 +575,7 @@ form {
 }
 
 .search-button span {
-  display: none;
+  visibility: hidden;
 }
 
 .field {
@@ -904,7 +904,7 @@ footer {
 }
 
 .social__links span {
-  display: none;
+  visibility: hidden;
 }
 
 .twitter {
