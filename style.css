@@ -171,12 +171,17 @@ body {
 }
 
 
-/* @media (min-width: 360px) and (max-width: 768px) {
+ @media (min-width: 360px) and (max-width: 768px) {
   .trends__wrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
-} мобильники */
+
+  .trends article {
+    width: 100%;
+  }
+} 
 
 .trends article {
   margin-right: 5px;
@@ -345,7 +350,6 @@ body {
   }
 }
 
-
 @media (min-width: 360px) and (max-width: 768px){
   .content {
     display: flex;
@@ -353,6 +357,7 @@ body {
     align-items: center;
     padding-top: 5.5%;
     margin-bottom: 4%;
+    width: 100%;
   }
 
   .card {
@@ -718,7 +723,7 @@ body {
   }
 
   .shop__wrapper article {
-    margin-bottom: 40%;
+    margin-bottom: 55%;
   }
 
   .shop__wrapper article:first-child {
@@ -726,41 +731,41 @@ body {
   }
 
   .shop__wrapper article:last-child {
-    margin-top: 12%;
+    margin-top: 16%;
   }
 
   section .shop__info__1 {
     border: 3px solid #b59f5b;
     flex-grow: 1;
-    padding-top:  12%;
-    padding-right: 3%;
-    padding-left: 6%;
-    margin-top: -9%;
-    margin-left: -7%;
+    padding-top:  50px;
+    padding-right: 10px;
+    padding-left: 20px;
+    margin-top: -38px;
+    margin-left: -22px;
   }
   
   section .shop__info__2 {
     border: 3px solid #b59f5b;
     flex-grow: 1;
-    padding-top:  12%;
-    padding-right: 3%;
-    padding-left: 6%;
-    margin-top: -9%;
-    margin-left: -7%;
+    padding-top:  50px;
+    padding-right: 10px;
+    padding-left: 20px;
+    margin-top: -38px;
+    margin-left: -22px;
   }
   
   section .shop__info__3 {
     border: 3px solid #b59f5b;
     flex-grow: 1;
-    padding-top:  12%;
-    padding-right: 3%;
-    padding-left: 6%;
-    margin-top: -9%;
-    margin-left: -7%;
+    padding-top:  50px;
+    padding-right: 10px;
+    padding-left: 20px;
+    margin-top: -38px;
+    margin-left: -22px;
   }
 
   .social__main {
-    margin-top: -13%;
+    margin-top: -220px;
   }
 
   .copyright {
