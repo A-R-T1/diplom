@@ -13,7 +13,6 @@ body {
 }
 
 .main-header {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -46,19 +45,19 @@ body {
 
 @media (min-width: 1200px) {
   .main-header {
-    background-image: url(images/banner-bg.jpg);
+    background-image: url(../images/banner-bg.jpg);
   }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .main-header {
-    background-image: url(images/banner-bg-tablet.jpg);
+    background-image: url(../images/banner-bg-tablet.jpg);
   }
 }
 
 @media (min-width: 360px) and (max-width: 768px) {
   .main-header {
-    background-image: url(images/banner-mobile.jpg);
+    background-image: url(../images/banner-mobile.jpg);
   }
 }
 
@@ -127,7 +126,7 @@ body {
 }
 
 .tittle__h4 {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
@@ -135,7 +134,6 @@ body {
   margin-bottom: 0;
   margin-top: -1.8%;
   margin-left: 6.7%;
-  text-decoration: none;
 }
 
 .tittle__h4:hover {
@@ -173,12 +171,17 @@ body {
 }
 
 
-/* @media (min-width: 360px) and (max-width: 768px) {
+ @media (min-width: 360px) and (max-width: 768px) {
   .trends__wrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
-} мобильники */
+
+  .trends article {
+    width: 100%;
+  }
+} 
 
 .trends article {
   margin-right: 5px;
@@ -193,7 +196,7 @@ body {
 }
 
 .trends__image__1 {
-  background-image: url(images/trend1.jpg);
+  background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
   z-index: 0;
   position: relative;
@@ -212,7 +215,7 @@ body {
 }
 
 .trends__image__2 {
-  background-image: url(images/trend2.jpg);
+  background-image: url(../images/trend2.jpg);
   background-repeat: no-repeat;
   z-index: 0;
   position: relative;
@@ -231,7 +234,7 @@ body {
 }
 
 .trends__image__3 {
-  background-image: url(images/trend3.jpg);
+  background-image: url(../images/trend3.jpg);
   background-repeat: no-repeat;
   z-index: 0;
   position: relative;
@@ -250,7 +253,7 @@ body {
 }
 
 .trends__image__4 {
-  background-image: url(images/trend4.jpg);
+  background-image: url(../images/trend4.jpg);
   background-repeat: no-repeat;
   z-index: 0;
   position: relative;
@@ -292,7 +295,7 @@ body {
 .trends__info ul {
   list-style: none;
   display: flex;
-  margin-bottom: 5px;
+  padding: 0;
 }
 
 .trends__info a {
@@ -347,7 +350,6 @@ body {
   }
 }
 
-
 @media (min-width: 360px) and (max-width: 768px){
   .content {
     display: flex;
@@ -355,6 +357,7 @@ body {
     align-items: center;
     padding-top: 5.5%;
     margin-bottom: 4%;
+    width: 100%;
   }
 
   .card {
@@ -405,11 +408,11 @@ body {
 }
 
 .card:nth-child(n+2) {
-  margin-top: 8%;
+  margin-top: 60px;
 }
 
 .card p {
-  margin-top: 1.9%;
+  margin-top: 50px;
 }
 
 .card-link {
@@ -427,7 +430,7 @@ body {
 .card ul {
   list-style: none;
   display: flex;
-  margin-bottom: 0.4%;
+  margin-bottom: 5px;
 }
 
 .card-name {
@@ -444,22 +447,20 @@ body {
 }
 
 .date-wrapper {
-  margin-top: 1.4%;
-  margin-bottom: 2.5%;
+  margin-top: 30px;
 }
 
 .card-date {
   font-size: 12px;
   color: #888888;
   font-weight: 400;
-  margin-bottom: 8.5%;
 }
 
 .author {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
-  margin-left: 0.8%;
+  margin-left: 10px;
 }
   
 .date-aside {
@@ -467,8 +468,7 @@ body {
   color: #888888;
   display: inline-block;
   vertical-align: top;
-  margin-top: -0.4%;
-  margin-left: 6.7%;
+  margin-left: 12px;
 }
 
 .card-content {
@@ -485,7 +485,11 @@ body {
 
 .card-info {
   box-sizing: border-box;
-  margin-left: 4%;
+  margin-left: 20px;
+}
+
+.card-info ul {
+  padding: 0;
 }
 
 .card-info li:first-child {
@@ -493,7 +497,7 @@ body {
 }
 
 .card-discription {
-  padding-left: 1.7%;
+  padding-left: 10px;
 }
 
 .card-list {
@@ -503,17 +507,17 @@ body {
 }
 
 .card-list li:first-child {
-  margin-top: 15%;
+  margin-top: 40px;
 }
 
 .card-list li {
   width: 100%;
-  margin-top: 9%;
+  margin-top: 15px;
 }
 
 .sidebar-right {
   max-width: 270px;
-  margin-left: 11%;
+  margin-left: 140px;
 }
 
 .sidebar-right-link {
@@ -521,12 +525,9 @@ body {
   display: flex;
 }
 
-.sidebar-right-link img {
-  width: 25%;
-}
-
 .sidebar-right a {
   color: #000000;
+  text-decoration: none;
 } 
 
 .sidebar-right a:hover {
@@ -534,7 +535,7 @@ body {
 }
 
 .sidebar-right section:nth-child(n+2) {
-  margin-top: 20.4%;
+  margin-top: 60px;
 }
 
 .search-group input {
@@ -550,7 +551,7 @@ body {
 
 .search-form {
   display: flex;
-  margin-top: 22.2%;
+  margin-top: 60px;
 }
 
 .search-group {
@@ -562,12 +563,12 @@ body {
 }
 
 .search-button {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-image: url(../SVG/search.svg);
   background-color: #b59f5b;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
-  width: 17.8%;
+  width: 48px;
   height: 48px;
   border: none;
 }
@@ -583,15 +584,15 @@ body {
 .field {
   outline: none;
   border: 0;
-  padding-left: 7.4%;
-  padding-right: 7.4%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .field-search {
   outline: none;
   border: 0;
-  padding-left: 7.4%;
-  padding-right: 7.4%;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 222px;
 }
 
@@ -602,8 +603,8 @@ body {
 }
 
 .subscription input {
-  margin-bottom: 7.4%;
-  margin-top: 7.4%;
+  margin-bottom: 20px;
+  margin-top: 20px;
   width: 235px;
   height: 48px;
   background-color: #f4f7f6;
@@ -630,15 +631,15 @@ body {
 }
 
 .tegs {
-  margin-top: 16.7%;
+  margin-top: 35px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
 .tegs li {
-  margin-right: 1.5%;
-	margin-bottom: 2.2%;
+  margin-right: 4px;
+	margin-bottom: 5px;
 	border: 3px solid #eeeeee;
 }
 
@@ -674,11 +675,10 @@ body {
 .categories li {
   flex-direction: column;
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 4.4%;
+  padding-bottom: 13px;
 }
 
 .categories a {
-  padding-top: 7.4%;
   text-decoration: none;
 }
 
@@ -723,7 +723,7 @@ body {
   }
 
   .shop__wrapper article {
-    margin-bottom: 40%;
+    margin-bottom: 55%;
   }
 
   .shop__wrapper article:first-child {
@@ -731,41 +731,41 @@ body {
   }
 
   .shop__wrapper article:last-child {
-    margin-top: 12%;
+    margin-top: 16%;
   }
 
   section .shop__info__1 {
     border: 3px solid #b59f5b;
     flex-grow: 1;
-    padding-top:  12%;
-    padding-right: 3%;
-    padding-left: 6%;
-    margin-top: -9%;
-    margin-left: -7%;
+    padding-top:  50px;
+    padding-right: 10px;
+    padding-left: 20px;
+    margin-top: -38px;
+    margin-left: -22px;
   }
   
   section .shop__info__2 {
     border: 3px solid #b59f5b;
     flex-grow: 1;
-    padding-top:  12%;
-    padding-right: 3%;
-    padding-left: 6%;
-    margin-top: -9%;
-    margin-left: -7%;
+    padding-top:  50px;
+    padding-right: 10px;
+    padding-left: 20px;
+    margin-top: -38px;
+    margin-left: -22px;
   }
   
   section .shop__info__3 {
     border: 3px solid #b59f5b;
     flex-grow: 1;
-    padding-top:  12%;
-    padding-right: 3%;
-    padding-left: 6%;
-    margin-top: -9%;
-    margin-left: -7%;
+    padding-top:  50px;
+    padding-right: 10px;
+    padding-left: 20px;
+    margin-top: -38px;
+    margin-left: -22px;
   }
 
   .social__main {
-    margin-top: -13%;
+    margin-top: -220px;
   }
 
   .copyright {
@@ -783,7 +783,7 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 21.5%;
+  margin-bottom: 270px;
 }
 
 .shop img {
@@ -797,41 +797,43 @@ body {
 .shop__info__1 {
   border: 3px solid #b59f5b;
   width: 300px;
+  height: 210px;
   flex-grow: 1;
-  padding-top:  4%;
-  padding-right: 0.7%;
-  padding-left: 2%;
-  margin-top: -3%;
-  margin-left: -1.5%;
+  padding-top:  40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: -30px;
+  margin-left: -20px;
   position: absolute;
 }
 
 .shop__info__2 {
   border: 3px solid #b59f5b;
   width: 300px;
+  height: 210px;
   flex-grow: 1;
-  padding-top:  4%;
-  padding-right: 0.7%;
-  padding-left: 2%;
-  margin-top: -3%;
-  margin-left: -1.5%;
+  padding-top:  40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: -30px;
+  margin-left: -20px;
   position: absolute;
 }
 
 .shop__info__3 {
   border: 3px solid #b59f5b;
   width: 300px;
+  height: 210px;
   flex-grow: 1;
-  padding-top:  4%;
-  padding-right: 0.7%;
-  padding-left: 2%;
-  margin-top: -3%;
-  margin-left: -1.5%;
+  padding-top:  40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: -30px;
+  margin-left: -20px;
   position: absolute;
 }
 
 .shop__price__wrapper p {
-  font-size: 20px;
   line-height: 24px;
   color: #0f0d0e;
   font-weight: 700;
@@ -842,15 +844,15 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100%;
-  margin: 0;
+  width: 90%;
+  margin-left: 8%;
   padding: 0;
 }
 
 .shop article {
   max-width: 25%;
-  margin-right: 170px;
-  margin-top: 3%;
+  margin-right: 100px;
+  margin-top: 60px;
 }
 
 .shop__text__link {
@@ -863,11 +865,20 @@ body {
 }
 
 .shop__price {
-  font-size: 20px;
   line-height: 24px;
   color: #0f0d0e;
   font-weight: 700;
   font-family: "Open Sans";
+}
+
+.shop__price__1 {
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-bottom: -5px;
+}
+
+.shop__price__2 {
+  font-size: 20px;
 }
 
 .shop__price__wrapper {
@@ -889,15 +900,15 @@ body {
 
 .footer-social {
   width: 100%;
-  margin-top: 8%;
-  padding-bottom: 5%;
+  margin-top: 310px;
 }
 
 .social-wrapper {
-  width: 100%;
+  width: 85%;
   height: 83px;
   background-color: #f4f7f6;
   margin: auto;
+  padding-right: 25px;
 }
 
 .social__main {
@@ -911,9 +922,9 @@ body {
 .social__links {
   background-size: 20px;
   background-repeat: no-repeat;
-  width: 1.7%; 
+  width: 20px;
   height: 20px;
-  margin-right: 2.1%;
+  margin-right: 30px;
 }
 
 .social__links span {
@@ -921,31 +932,30 @@ body {
 }
 
 .twitter {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+  background-image: url(../SVG/004-twitter.svg);
 }
 
 .pinterest {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg)
+  background-image: url(../SVG/001-pinterest.svg)
 }
 
 .facebook {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
+  background-image: url(../SVG/002-facebook-logo.svg);
 }
 
 .instagram {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+  background-image: url(../SVG/005-instagram.svg);
 }
 
 .tumblr{
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+  background-image: url(../SVG/003-tumblr.svg);
   margin-right: 0;
 }
 
 .copyright {
   text-align: center;
-  margin-top: 6%;
   font-size: 12px;
   color: #999999;
   margin: 6% auto 3.8%;
-  margin-left: -3.4%;
+  padding-right: 40px;
 }
